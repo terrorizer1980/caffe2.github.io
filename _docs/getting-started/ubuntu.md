@@ -58,7 +58,6 @@ sudo apt-get install -y --no-install-recommends \
       git \
       libgoogle-glog-dev \
       libgtest-dev \
-      libiomp-dev \
       libleveldb-dev \
       liblmdb-dev \
       libopencv-dev \
@@ -69,11 +68,14 @@ sudo apt-get install -y --no-install-recommends \
       openmpi-doc \
       protobuf-compiler \
       python-dev \
-      python-pip                          
+      python-pip  \
+      python-setuptools
 pip install --user \
+      wheel
       future \
       numpy \
-      protobuf
+      protobuf \
+      pyyaml
 ```
 
 > Note `libgflags2` is for Ubuntu 14.04. `libgflags-dev` is for Ubuntu 16.04.
